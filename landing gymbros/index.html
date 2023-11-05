@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymBros</title>
+    <style>
+
+        :root{
+            --primary:blue;
+        }
+
+        *{
+            padding:0;
+            margin:0;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+      
+        header ul{
+            background-color:var(--primary);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            align-items: center;
+            padding:30px;
+        }
+
+        header ul li{
+            list-style:none;
+        }
+        header ul li a{
+            text-decoration:none;
+            color:white;
+        }
+        header ul li a:hover{
+            text-decoration:2px underline dotted;
+            text-decoration-color:white;
+        }
+        span{
+            background-image:linear-gradient(45deg,var(--primary),var(--primary),white,var(--primary),var(--primary),var(--primary));
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+        h1{
+            text-align: center;
+            font-size:45px;
+        }
+        img{
+            display:block;
+            border-radius:6px;
+            box-shadow:20px 20px 50px 3px grey;
+        }
+        #main-heading{
+            margin-top:40px;
+        }
+        @media only screen and (min-width:485px){
+        .image img{
+           
+            width:500px;
+            height:400px;
+            margin:100px auto;
+          
+        }
+        form{
+            border:2px solid grey;
+            box-shadow:20px 20px 50px 3px grey;
+            width:400px;
+            padding:30px;
+            margin:30px auto;
+            border-radius:15px;
+        }
+        form label{
+            font-size:20px;
+            display: block;
+            margin-top:30px;
+        }
+        form button{
+            margin-top:30px;
+        }
+        form input{
+            border-left:none;
+            border-right:none;
+            border-top:none;
+            outline:none;
+            caret-color:blue;
+            width:300px;
+
+        }
+        form textarea{
+            width:320px;
+            height:150px;
+            caret-color:blue;
+        }
+       
+    }
+        @media only screen and (max-width:484px){
+        .image img{
+           
+            width:250px;
+            height:200px;
+            margin:40px auto;
+          
+        }
+        form{
+            border:2px solid grey;
+            box-shadow:20px 20px 50px 3px grey;
+            width:200px;
+            padding:30px;
+            margin:40px auto;
+            border-radius:15px;
+        }
+        form label{
+            font-size:20px;
+            display: block;
+            margin-top:30px;
+        }
+        form button{
+            margin-top:30px;
+        }
+        form input{
+            border-left:none;
+            border-right:none;
+            border-top:none;
+            outline:none;
+            caret-color:blue;
+            width:150px;
+
+        }
+        form textarea{
+            width:150px;
+            height:100px;
+            caret-color:blue;
+        }
+       
+    }
+
+    .content{
+        display:flex;
+        flex-wrap: wrap;
+        padding:55px ;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .content img{
+        width:210px;
+        height:210px;
+    }
+
+    button{
+            padding:10px;
+            border-radius:25px;
+            background-color:blue;
+            color:white;
+            width:150px;
+            display: block;
+            margin: 4px auto;
+            cursor: pointer;
+            border:none;
+            box-shadow:20px 20px 50px 2px grey;
+        }
+
+      
+      
+        
+        .circle #up{
+            position:fixed;
+            top:90vh;
+            width:40px;
+            height:40px;
+            right:10px;
+            cursor: pointer;
+            border-radius:50%;
+            background-color:black;
+            color:blue;
+            animation-name:animate;
+            animation-duration:1s;
+            animation-iteration-count:infinite;
+
+        }
+        @keyframes animate {
+            0%{
+                transform: translateY(3px);
+                transition: ease-in-out;
+            }
+            100%{
+                transform: translateY(-3px);
+                transition: ease-in-out;
+            }
+        }
+       
+       
+        
+        footer{
+            background-color:black;
+            color:white;
+            padding:30px;
+            text-align: center;
+        }
+       
+
+    </style>
+</head>
+<body>
+
+<!-- header -->
+
+    <header id="head">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact-Us</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+<!-- home -->
+        <div id="home">
+            <h1 id="main-heading"><span>W</span>elcome <span>T</span>o <span>G</span>ymBros !</h1>
+            <div class="image">
+                <img src="https://d1tm14lrsghf7q.cloudfront.net/media/files/rtf/2019_07_FRAME/Fernanda_Orozco_Refuse_Cycling-11.jpg" alt="gymbros">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0000ff" fill-opacity="1" d="M0,224L24,234.7C48,245,96,267,144,261.3C192,256,240,224,288,181.3C336,139,384,85,432,58.7C480,32,528,32,576,53.3C624,75,672,117,720,133.3C768,149,816,139,864,154.7C912,171,960,213,1008,208C1056,203,1104,149,1152,133.3C1200,117,1248,139,1296,133.3C1344,128,1392,96,1416,80L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
+              </svg>
+        </div>
+
+<!-- about -->
+        <div id="about">
+
+            <h1><span>A</span>bout</h1>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus quasi repellendus odio. Id animi repudiandae placeat et quidem magni eum architecto exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. A ex ipsa odit?</p>
+               
+                <img src="https://source.unsplash.com/random/?gym" alt="Gym">
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ut nobis ipsum exercitationem blanditiis! Saepe veritatis expedita consectetur corporis iste eius mollitia quod reiciendis, accusantium quisquam cupiditate id vero nostrum . Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit atque ducimus vel.</p>
+                <img src="https://source.unsplash.com/random/?pushups" alt="Gym">
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0000ff" fill-opacity="1" d="M0,224L24,234.7C48,245,96,267,144,261.3C192,256,240,224,288,181.3C336,139,384,85,432,58.7C480,32,528,32,576,53.3C624,75,672,117,720,133.3C768,149,816,139,864,154.7C912,171,960,213,1008,208C1056,203,1104,149,1152,133.3C1200,117,1248,139,1296,133.3C1344,128,1392,96,1416,80L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
+              </svg>
+
+        </div>
+
+<!-- services -->
+        <div id="services">
+            <h1><span>S</span>ervices</h1>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ut nobis ipsum exercitationem blanditiis! Saepe veritatis expedita consectetur corporis iste eius mollitia quod reiciendis, accusantium quisquam cupiditate id vero nostrum inventore. Repellat facere similique culpa illum doloribus nobis ullam natus expedita odio nihil, provident facilis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse deserunt at dicta minus, doloremque id nisi, temporibus fugit corrupti saepe, expedita repudiandae fugiat. Voluptatum ipsum nobis adipisci illum at vitae. Quia blanditiis earum asperiores, consectetur dignissimos facere quae rem! Veritatis perferendis ullam atque debitis.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sequi quod laudantium nemo quisquam. Id, distinctio eum fuga, eligendi, fugit nemo similique ipsam optio deserunt quas repudiandae ullam incidunt. Nam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit dolorum dolor voluptatum debitis? Officiis alias maiores repudiandae nulla porro, corrupti architecto molestias quam minus accusamus vero sed expedita soluta ad sint commodi? Consectetur unde repudiandae alias explicabo aut fugiat pariatur consequuntur similique! A ratione nemo ipsum facilis neque, cum libero dolor tempora maiores id ab quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cumque quo harum eius, dicta repellendus est eum laboriosam aliquid et provident sed quis expedita ad facilis voluptatibus, perferendis adipisci dolorem non explicabo deleniti nostrum illum. Consequatur dignissimos quia eligendi at velit aperiam, praesentium architecto doloremque!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vitae ducimus voluptates reiciendis distinctio dolor similique laboriosam enim vel modi eum, voluptatem eius consectetur. Tempore quod, accusamus excepturi enim culpa, amet dicta, deleniti obcaecati eos ea maxime pariatur ducimus tenetur quae dolorem repellendus eligendi? Odio eveniet id laborum pariatur minus, ratione maxime nam. Fuga, aut?
+                    </p>
+                </p>
+                <img src="https://source.unsplash.com/random/?gym" alt="Gym">
+            </div>
+
+            <button>More</button>
+            <br><br>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0000ff" fill-opacity="1" d="M0,224L24,234.7C48,245,96,267,144,261.3C192,256,240,224,288,181.3C336,139,384,85,432,58.7C480,32,528,32,576,53.3C624,75,672,117,720,133.3C768,149,816,139,864,154.7C912,171,960,213,1008,208C1056,203,1104,149,1152,133.3C1200,117,1248,139,1296,133.3C1344,128,1392,96,1416,80L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
+              </svg>
+        </div>
+
+<!-- contact -->
+        <div id="contact">
+            <h1><span>C</span>ontact -<span>U</span>s</h1>
+            <div class="circle" >
+                <a href="#head"><button id="up"> &uparrow;</button></a>
+            </div>
+            <form action="https://formsubmit.co/cab4f1d05156ca52b13adbec28dde467" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" title="Enter your name" name="name"required>
+                <br>
+                <label for="email" id="email">Email:</label>
+                <input type="email" title="Enter your email" name="email" required>
+                <br>
+                <label for="message">Message :</label><br>
+                <textarea name="text" id="text" placeholder="feedback/query" required>
+                </textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+<!-- footer -->
+    <footer>
+        &copy; 2023 GymBros
+    </footer>
+
+</body>
+</html>
