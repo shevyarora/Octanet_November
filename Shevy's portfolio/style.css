@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@500&family=Pixelify+Sans&display=swap');
+  
+
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'M PLUS 1 Code', monospace;
+
+}
+html{
+  
+    scroll-behavior: smooth;
+}
+:root{
+    --primary:rgb(234, 234, 234);
+}
+body{
+
+    overflow-x: hidden;
+    
+}
+.sideBubble1{
+
+    width:200px;
+    height:200px;
+    background-color:black;
+    position: absolute;
+    right:-50px;
+    top:-50px;
+    z-index:1;
+    border-radius:50%;
+}
+.sideBubble2{
+position: absolute;
+width:150px;
+height:150px;
+top:200vh;
+left:-50px;
+z-index:2;
+background-color:var(--primary);
+border-radius:50%;
+}
+.sideBubble3{
+
+width:200px;
+height:200px;
+background-color:black;
+position: absolute;
+left:-50px;
+top:210vh;
+z-index:1;
+border-radius:50%;
+}
+.sideBubble4{
+position: absolute;
+width:150px;
+height:150px;
+top:100px;
+right:-60px;
+z-index:2;
+background-color:var(--primary);
+border-radius:50%;
+}
+.sideBubble5{
+
+width:200px;
+height:200px;
+background-color:black;
+position: absolute;
+bottom:-335vh;
+right:-50px;
+z-index:1;
+border-radius:50%;
+}
+.sideBubble6{
+position: absolute;
+width:150px;
+height:150px;
+bottom:-320vh;
+right:-50px;
+z-index:2;
+background-color:var(--primary);
+border-radius:50%;
+}
+header ul{
+display: flex;
+flex-wrap:wrap;
+justify-content: space-around;
+background-color:var(--primary);
+padding:30px;
+row-gap:20px;
+}
+header ul li{
+list-style:none;
+font-size:20px;
+}
+header ul li a{
+text-decoration:none;
+cursor: pointer;
+color:black;
+}
+header ul li a:hover{
+text-decoration:2px underline dashed;
+}
+.content{
+background-color:var(--primary);
+text-align: center ;
+width:500px;
+height:200px;
+border-radius:20px;
+padding:50px;
+margin: auto;
+margin-top:200px;
+cursor: pointer;
+
+}
+.content h1{
+font-size:36px;
+margin-top:30px;
+}
+#underline{
+height:0px;
+background-color: black;
+width:0px;
+display: block;
+margin: auto;
+animation-name:change;
+animation-duration:3s;
+animation-iteration-count:infinite;
+animation-fill-mode: both;
+/* animation-direction: alternate-reverse; */
+animation-timing-function:ease-in-out;
+}
+
+
+@keyframes change{
+0%{
+height:5px;
+width:0px;
+
+}
+100%{
+height:5px;
+width:400px;
+}
+}
+
+button{
+padding:11px;
+border-radius:10px;
+margin: auto;
+display: block;
+margin-top:30px;
+cursor: pointer;
+font-size:20px;
+
+}
+a{
+text-decoration: none;
+}
+button:hover{
+background-color:black;
+color:white;
+}
+.sidebar{
+height: 100px;
+width: 50px;
+background-image: radial-gradient(#ffffff 90%,#000000);
+background-size: 20px 20px;
+position: fixed;
+left: 0;
+top: 350px;
+}
+#part1{
+height:100vh;
+}
+#part2{
+height:100vh;
+}
+#part3{
+height:100vh;
+background-image: radial-gradient(#000000 90%,#ffffff);
+background-size: 20px 20px;
+cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym760.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym760.png), auto !important;
+
+
+}
+#part4{
+height:100vh;
+}
+.content2{
+width:80%;
+background-color:var(--primary);
+margin: auto;
+padding:50px;
+margin-top:50px;
+}
+.content3{
+color:white;
+text-align: center;
+margin-top:30px;
+}
+.heading{
+padding:20px;
+background-color:var(--primary);
+width:200px;
+display: block;
+margin: auto;
+text-align: center;
+
+}
+.phead{
+background-image: radial-gradient(#000000 90%,#ffffff);
+background-size: 20px 20px;
+width:200px;
+height:50px;
+display: block;
+margin: auto;
+animation-name:change2;
+animation-duration:4s;
+animation-iteration-count: infinite;
+color:white;
+}
+
+@keyframes change2{
+0%{
+background-position:30px -45px;
+}
+50%{
+background-position:45px  -108px;
+}
+75%{
+background-position:-20px 145px;
+}
+100%{
+background-position: 125px -50px;
+}
+}
+form{
+    border:2px solid grey;
+    box-shadow:20px 20px 50px 3px grey;
+    width:400px;
+    padding:30px;
+    border-radius:15px;
+    display: block;
+    margin:50px auto;
+}
+form label{
+    font-size:20px;
+    display: block;
+    margin-top:30px;
+}
+form button{
+    margin-top:30px;
+}
+form input{
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    outline:none;
+    caret-color:rgb(0, 0, 0);
+    width:300px;
+
+}
+form textarea{
+    width:320px;
+    height:150px;
+    caret-color:rgb(0, 0, 0);
+}
+
+footer{
+text-align: center;
+background-color: #000000;
+color: #ffffff;
+width:100%;
+}
